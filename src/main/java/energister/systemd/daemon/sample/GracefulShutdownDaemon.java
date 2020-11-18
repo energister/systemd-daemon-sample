@@ -3,7 +3,7 @@ package energister.systemd.daemon.sample;
 import java.io.IOException;
 import java.util.concurrent.Semaphore;
 
-public class GracefulShutdownService {
+public class GracefulShutdownDaemon {
     public static void main(String[] args) throws InterruptedException {
 
         Runtime.getRuntime().addShutdownHook(
