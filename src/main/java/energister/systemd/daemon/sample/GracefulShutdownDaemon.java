@@ -9,10 +9,10 @@ public class GracefulShutdownDaemon {
         Runtime.getRuntime().addShutdownHook(
                 /**
                  * Shutdown hooks are executed:
-                 *     When last app's non-daemon thread terminates
-                 *     When System.exit() has been called from Java code
-                 *     Because user hit CTRL-C
-                 *     System level shutdown or User Log-Off
+                 *     * When last app's non-daemon thread terminates
+                 *     * When System.exit() has been called from Java code
+                 *     * Because user hit CTRL-C
+                 *     * System level shutdown or User Log-Off
                  */
                 new Thread(() -> {
                     System.out.println("Shutdown Hook has been executed");

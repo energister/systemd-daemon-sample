@@ -1,0 +1,7 @@
+[Unit]
+Description=Simple daemon
+
+[Service]
+ExecStart=/usr/bin/java -jar /home/user/systemd-daemon-sample.jar
+SuccessExitStatus=143
+TimeoutStopSec=10
